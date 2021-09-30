@@ -17,7 +17,6 @@ const myForm = document.getElementById("myForm");
             }
         }
 
-
         addSubmitHandler(fn) {
             console.log('Setting submit handler for form');
             this.$formElement.on('submit', function (event) {
@@ -45,10 +44,10 @@ const myForm = document.getElementById("myForm");
             if ($(this).attr("value") == "paymentSubmit") {
 
                 //sets the value of the name in the modal box that is given by the text box titled 'Name'
-                var setName = $('#name').val(); 
+                var setName = $('#name').val();
 
                 //sets the value of the title by the selected radio button ex. Ace
-                var titleOutput = $("input:radio[name=title]:checked").val(); 
+                var titleOutput = $("input:radio[name=title]:checked").val();
                 document.getElementById('titleOutput').innerHTML = titleOutput;
 
                 //logs a message to the console in dev tools of our browswer that the form has been submited
